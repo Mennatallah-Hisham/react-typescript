@@ -3,6 +3,7 @@ import Heading from "./components/Heading";
 import Section from "./components/Section";
 import Counter from "./components/counter";
 import List from "./components/List";
+import PostList from "./components/PostList";
 import { useState } from "react";
 function App() {
   const [count, setCount]=useState<number>(5);
@@ -30,6 +31,8 @@ const list=[
     </Counter>
     <List items={list}  
     render={(item:string)=><p>{item}</p>}/>
+    <h2>post list</h2>
+    <PostList/>
   </>
   )
 }
